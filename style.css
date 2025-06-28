@@ -1,0 +1,372 @@
+<<<<<<< HEAD
+body {
+      font-family: "Playfair Display", serif;
+    }
+
+    .cabecalho {
+      background: url(fotos/taylorheader.jpg) center/cover no-repeat;
+      background-size: cover;
+      image-rendering: auto;
+      border-radius: 10px;
+    }
+
+    .cabecalho header {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sobre {
+      margin-top: 40px;
+      /* dá um espaço positivo ao invés de negativo */
+      position: relative;
+      z-index: 1;
+    }
+
+    .rounded-img {
+      border-radius: 20px;
+      max-width: 100%;
+    }
+
+    .bg-soft {
+      background-color: #fff5f5;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar a,
+    header h1,
+    header p {
+      color: #e05098 !important;
+      /* rosa claro */
+      font-weight: 700;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar-brand span {
+      font-size: 1.5rem;
+      color: #7c575d !important;
+    }
+
+    .navbar {
+      border-radius: 10px;
+    }
+
+    .navbar a:hover {
+      color: #ff7c9a !important;
+      /* tom mais claro no hover */
+    }
+
+    #formulario {
+      margin-top: 80px;
+      /* separação visual dos cards */
+      background-color: #fff0f8;
+      border: 2px solid #e75480;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    #formulario h2 img {
+      margin-right: 10px;
+    }
+
+    #formulario .card-visual {
+      background-color: #ffe6f1;
+      border: 2px dashed #d386ad;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .btn-swiftie {
+      background-color: #655245 !important;
+      /* rosinha claro */
+      color: #ffffff !important;
+      /* texto escuro para contraste */
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-swiftie:hover {
+      background-color: #f4a8c0 !important;
+      color: white !important;
+    }
+
+    #carouselGaleria img {
+      max-height: 430px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* 1. Layout responsivo da barra lateral */
+    @media (min-width: 768px) {
+      .layout-completo {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .layout-completo {
+        flex-direction: column;
+      }
+    }
+
+    /* 2. Alinha o cabeçalho à esquerda em telas grandes */
+    @media (min-width: 992px) {
+      .cabecalho header {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 60px;
+      }
+    }
+
+    /* 3. Botão flutuante visível só em telas pequenas */
+    @media (max-width: 768px) {
+      .btn-voltar-topo {
+        font-size: 1.7rem;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #e05098;
+        color: white;
+        padding: 20px;
+        border-radius: 50%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+
+      .btn-voltar-topo:hover {
+        background-color: #ff7c9a;
+
+      }
+    }
+
+    @media (min-width: 769px) {
+      .btn-voltar-topo {
+        display: none;
+      }
+    }
+
+    /* 4. Esconde carrossel em telas pequenas */
+    @media (max-width: 700px) {
+      #carouselGaleria {
+        display: none !important;
+      }
+    }
+
+    /* 5. Aumenta o tamanho de botões em telas grandes */
+    @media (max-width: 768px) {
+
+      button,
+      .btn,
+      a {
+        font-size: 1.3rem;
+        padding: 12px 18px;
+      }
+
+      /* 6. Diminui icone da nav bar em telas menores */
+      @media (max-width: 750px) {
+        .icone {
+          max-width: 150px !important;
+          height: auto;
+        }
+      }
+
+      .navbar-brand span {
+        font-size: 1rem !important;
+      }
+=======
+body {
+      font-family: "Playfair Display", serif;
+    }
+
+    .cabecalho {
+      background: url(fotos/taylorheader.jpg) center/cover no-repeat;
+      background-size: cover;
+      image-rendering: auto;
+      border-radius: 10px;
+    }
+
+    .cabecalho header {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sobre {
+      margin-top: 40px;
+      /* dá um espaço positivo ao invés de negativo */
+      position: relative;
+      z-index: 1;
+    }
+
+    .rounded-img {
+      border-radius: 20px;
+      max-width: 100%;
+    }
+
+    .bg-soft {
+      background-color: #fff5f5;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .navbar a,
+    header h1,
+    header p {
+      color: #e05098 !important;
+      /* rosa claro */
+      font-weight: 700;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar-brand span {
+      font-size: 1.5rem;
+      color: #7c575d !important;
+    }
+
+    .navbar {
+      border-radius: 10px;
+    }
+
+    .navbar a:hover {
+      color: #ff7c9a !important;
+      /* tom mais claro no hover */
+    }
+
+    #formulario {
+      margin-top: 80px;
+      /* separação visual dos cards */
+      background-color: #fff0f8;
+      border: 2px solid #e75480;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    #formulario h2 img {
+      margin-right: 10px;
+    }
+
+    #formulario .card-visual {
+      background-color: #ffe6f1;
+      border: 2px dashed #d386ad;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .btn-swiftie {
+      background-color: #655245 !important;
+      /* rosinha claro */
+      color: #ffffff !important;
+      /* texto escuro para contraste */
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-swiftie:hover {
+      background-color: #f4a8c0 !important;
+      color: white !important;
+    }
+
+    #carouselGaleria img {
+      max-height: 430px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* 1. Layout responsivo da barra lateral */
+    @media (min-width: 768px) {
+      .layout-completo {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .layout-completo {
+        flex-direction: column;
+      }
+    }
+
+    /* 2. Alinha o cabeçalho à esquerda em telas grandes */
+    @media (min-width: 992px) {
+      .cabecalho header {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 60px;
+      }
+    }
+
+    /* 3. Botão flutuante visível só em telas pequenas */
+    @media (max-width: 768px) {
+      .btn-voltar-topo {
+        font-size: 1.7rem;
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #e05098;
+        color: white;
+        padding: 20px;
+        border-radius: 50%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+      }
+
+      .btn-voltar-topo:hover {
+        background-color: #ff7c9a;
+
+      }
+    }
+
+    @media (min-width: 769px) {
+      .btn-voltar-topo {
+        display: none;
+      }
+    }
+
+    /* 4. Esconde carrossel em telas pequenas */
+    @media (max-width: 700px) {
+      #carouselGaleria {
+        display: none !important;
+      }
+    }
+
+    /* 5. Aumenta o tamanho de botões em telas grandes */
+    @media (max-width: 768px) {
+
+      button,
+      .btn,
+      a {
+        font-size: 1.3rem;
+        padding: 12px 18px;
+      }
+
+      /* 6. Diminui icone da nav bar em telas menores */
+      @media (max-width: 750px) {
+        .icone {
+          max-width: 150px !important;
+          height: auto;
+        }
+      }
+
+      .navbar-brand span {
+        font-size: 1rem !important;
+      }
+>>>>>>> 80fb368b2bc8cb60fdf0d456a58d8474b6cc80c4
+    }
